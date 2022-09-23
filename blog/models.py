@@ -32,6 +32,10 @@ class Article(models.Model):
     def __str__(self):
         return f'{self.title} - {self.sub_title}'
 
+    class Meta:
+        verbose_name = "مقاله"
+        verbose_name_plural = "مقالات"
+
 
 
 class Comment(models.Model):
@@ -44,3 +48,8 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.body[:50]
+
+    
+    class Meta:
+        verbose_name = "نظر"
+        verbose_name_plural = "نظریات"
