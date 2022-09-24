@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     # optional liberary
     'django_cleanup.apps.CleanupConfig',
 
+    # persian_fonts
+    'admin_persian',
+
 ]
 
 MIDDLEWARE = [
