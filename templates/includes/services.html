@@ -1,0 +1,40 @@
+<section id="services" class="services-mf pt-5 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              {{ sub_title.sub_title }}
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {% for object in services %}
+          <div class="col-md-4">
+          <div class="service-box">
+            <div class="addition">
+              <img src="{{ object.image.url }}" alt="" class="img-fluid pro-photo">
+              <i class="fas fa-search pro-link"></i>
+            </div>
+
+            <!-- <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+            </div> -->
+            <div class="service-content">
+              <h2 class="s-title">{{ object.title }}</h2>
+              <p class="s-description text-center">
+                {{ object.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor%}
+        </div>
+      </div>
+    </div>
+  </section>
